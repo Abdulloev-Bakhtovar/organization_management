@@ -1,22 +1,24 @@
 package org.bakht.model;
 
 public class Department {
-    private int department_id;
+    private int departmentId;
     private String name;
+    private Company company;
 
     public Department() {
     }
 
-    public Department(String name) {
+    public Department(String name, Company company) {
         this.name = name;
+        this.company = company;
     }
 
-    public int getDepartment_id() {
-        return department_id;
+    public int getDepartmentId() {
+        return departmentId;
     }
 
-    public void setDepartment_id(int department_id) {
-        this.department_id = department_id;
+    public void setDepartmentId(int departmentId) {
+        this.departmentId = departmentId;
     }
 
     public String getName() {
@@ -27,11 +29,20 @@ public class Department {
         this.name = name;
     }
 
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
+    }
+
     @Override
     public String toString() {
         return "Department{" +
-                "department_id=" + department_id +
+                "departmentId=" + departmentId +
                 ", name='" + name + '\'' +
+                ", company=" + company +
                 '}';
     }
 }

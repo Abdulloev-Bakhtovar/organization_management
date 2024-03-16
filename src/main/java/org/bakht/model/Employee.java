@@ -6,15 +6,15 @@ public class Employee {
     private int employeeId;
     private String name;
     private BigDecimal salary;
-    private int departmentId;
+    private Department department;
 
     public Employee() {
     }
 
-    public Employee(String name, BigDecimal salary, int departmentId) {
+    public Employee(String name, BigDecimal salary, Department department) {
         this.name = name;
         this.salary = salary;
-        this.departmentId = departmentId;
+        this.department = department;
     }
 
     public int getEmployeeId() {
@@ -41,12 +41,12 @@ public class Employee {
         this.salary = salary;
     }
 
-    public int getDepartmentId() {
-        return departmentId;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentId(int departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Employee {
                 "employeeId=" + employeeId +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
-                ", departmentId=" + departmentId +
+                ", department=" + department +
                 '}';
     }
 }
