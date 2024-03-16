@@ -3,8 +3,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### Myfiles ###
-/src/main/resources/**/*.properties
+### My files ###
+/src/main/resources/*.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

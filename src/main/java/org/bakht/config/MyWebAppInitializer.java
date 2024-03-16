@@ -1,5 +1,6 @@
 package org.bakht.config;
 
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class MyWebAppInitializer extends
