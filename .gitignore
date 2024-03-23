@@ -4,7 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### My files ###
-/src/main/resources/*.properties
+/src/main/resources/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
